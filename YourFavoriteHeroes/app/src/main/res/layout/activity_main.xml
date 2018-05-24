@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".MainActivity"
+    >
+
+
+    <ImageView
+        android:id="@+id/dc_comics_background"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:scaleType="fitXY"
+        android:src="@drawable/dccomics_background" />
+
+    <Button
+        android:id="@+id/learn_dc_heroes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/learn_marvel_heroes_button"
+        android:layout_alignLeft="@id/learn_marvel_heroes_button"
+        android:layout_marginTop="123dp"
+        android:background="#87CEFA"
+        android:onClick="learnMoreDc"
+        android:text="DC Roster"
+        android:textAllCaps="true" />
+
+
+    <ImageView
+        android:id="@+id/marvel_comic_background"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/marvel_background"
+        />
+
+
+    <Button
+        android:id="@+id/learn_marvel_heroes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="214dp"
+        android:layout_marginStart="33dp"
+        android:background="@android:color/holo_red_dark"
+        android:onClick="learnMoreMarvel"
+        android:text="Marvel Roster"
+        android:textAllCaps="true" />
+
+    <ImageView
+        android:id="@+id/spawn_background"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/spawn_poster" />
+
+    <Button
+        android:id="@+id/learn_other_heroes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignLeft="@+id/learn_dc_heroes_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/learn_dc_heroes_button"
+        android:layout_marginBottom="16dp"
+        android:background="#660000"
+        android:onClick="learnMoreOther"
+        android:text="Roster of heroes from other publishers"
+        android:textAllCaps="true"
+    />
+
+
+</RelativeLayout>
